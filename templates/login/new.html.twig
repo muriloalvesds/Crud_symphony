@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Novo login{% endblock %}
+
+{% block body %}
+    <h1>Criar novo login</h1>
+
+    {{ include('login/_form.html.twig') }}
+
+    <a href="{{ path('app_login_index') }}">back to list</a>
+{% endblock %}
